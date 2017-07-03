@@ -65,11 +65,11 @@ function dibuja(n){
   }
   // agregamos espacios segun el numero ingresado y quitamos los elementos del array creado y lo volvemos string
   for(var i=0 ; i < n ; i++){
-   string += espacios(n-i) + array.slice(0,array[i*2]).join("") + "</br>";
+   string += espacios(n-i) + array.slice(0,array[i*2]).join("") + "\n";
  }
   //para la parte de abajo
   for(var i=n-2 ; i>=0 ; i--){
-      string += espacios(n-i) + array.slice(0,array[i*2]).join("") + "</br>";
+      string += espacios(n-i) + array.slice(0,array[i*2]).join("") + "\n";
     }
   return string;
 }
